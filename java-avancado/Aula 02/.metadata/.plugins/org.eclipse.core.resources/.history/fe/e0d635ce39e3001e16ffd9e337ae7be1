@@ -1,8 +1,0 @@
-package com.ecomerce.projeto.model;
-
-public class Categoria {
-	
-	private Long id;
-	private String nome;
-
-}
