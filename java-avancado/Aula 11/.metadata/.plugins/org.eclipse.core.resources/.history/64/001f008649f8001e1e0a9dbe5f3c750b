@@ -1,0 +1,5 @@
+package com.ecomerce.projeto.repository;
+
+public class UsuarioRepositoryTest {
+
+}
