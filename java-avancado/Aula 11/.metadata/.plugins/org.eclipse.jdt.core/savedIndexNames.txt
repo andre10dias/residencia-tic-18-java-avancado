@@ -75,7 +75,6 @@ INDEX VERSION 1.134+C:\residencia18-modulo3\java-avancado\workspace\residencia-t
 4150380434.index
 1118804402.index
 2979977822.index
-1519549194.index
 3607176054.index
 1290448232.index
 764294913.index
