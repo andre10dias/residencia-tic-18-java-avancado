@@ -1,0 +1,82 @@
+2024-04-03T08:40:54.581-03:00  INFO 8848 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : Starting ProjetoApplication using Java 17.0.10 with PID 8848 (C:\residencia18-modulo3\java-avancado\workspace\residencia-tic-18-java-avancado\Aula 07\projeto\target\classes started by diasb in C:\residencia18-modulo3\java-avancado\workspace\residencia-tic-18-java-avancado\Aula 07\projeto)
+2024-04-03T08:40:54.582-03:00  INFO 8848 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-04-03T08:40:54.785-03:00  INFO 8848 --- [projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T08:40:54.800-03:00  INFO 8848 --- [projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-04-03T08:40:54.900-03:00  INFO 8848 --- [projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-03T08:40:54.900-03:00  INFO 8848 --- [projeto] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-03T08:40:54.900-03:00  INFO 8848 --- [projeto] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T08:40:54.927-03:00  INFO 8848 --- [projeto] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-03T08:40:54.927-03:00  INFO 8848 --- [projeto] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 342 ms
+2024-04-03T08:40:54.964-03:00  INFO 8848 --- [projeto] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T08:40:54.965-03:00  INFO 8848 --- [projeto] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-03T08:40:54.969-03:00  INFO 8848 --- [projeto] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T08:40:54.970-03:00  INFO 8848 --- [projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-04-03T08:40:55.134-03:00  INFO 8848 --- [projeto] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@7a182822
+2024-04-03T08:40:55.134-03:00  INFO 8848 --- [projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-04-03T08:40:55.145-03:00  WARN 8848 --- [projeto] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T08:40:55.210-03:00  INFO 8848 --- [projeto] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T08:40:55.271-03:00  INFO 8848 --- [projeto] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T08:40:55.390-03:00  WARN 8848 --- [projeto] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T08:40:55.478-03:00  INFO 8848 --- [projeto] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T08:40:55.490-03:00  INFO 8848 --- [projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T08:40:55.496-03:00  INFO 8848 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : Started ProjetoApplication in 0.945 seconds (process running for 246.626)
+2024-04-03T08:40:55.498-03:00  INFO 8848 --- [projeto] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T08:41:43.701-03:00  INFO 5856 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : Starting ProjetoApplication using Java 17.0.10 with PID 5856 (C:\residencia18-modulo3\java-avancado\workspace\residencia-tic-18-java-avancado\Aula 07\projeto\target\classes started by diasb in C:\residencia18-modulo3\java-avancado\workspace\residencia-tic-18-java-avancado\Aula 07\projeto)
+2024-04-03T08:41:43.711-03:00  INFO 5856 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-04-03T08:41:43.786-03:00  INFO 5856 --- [projeto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-03T08:41:43.786-03:00  INFO 5856 --- [projeto] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-03T08:41:44.940-03:00  INFO 5856 --- [projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T08:41:45.027-03:00  INFO 5856 --- [projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 4 JPA repository interfaces.
+2024-04-03T08:41:45.852-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-03T08:41:45.871-03:00  INFO 5856 --- [projeto] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-03T08:41:45.871-03:00  INFO 5856 --- [projeto] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T08:41:45.948-03:00  INFO 5856 --- [projeto] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-03T08:41:45.948-03:00  INFO 5856 --- [projeto] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2162 ms
+2024-04-03T08:41:46.148-03:00  INFO 5856 --- [projeto] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T08:41:46.245-03:00  INFO 5856 --- [projeto] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T08:41:46.299-03:00  INFO 5856 --- [projeto] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-03T08:41:46.625-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T08:41:46.665-03:00  INFO 5856 --- [projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-03T08:41:46.973-03:00  INFO 5856 --- [projeto] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15043525
+2024-04-03T08:41:46.976-03:00  INFO 5856 --- [projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-03T08:41:47.031-03:00  WARN 5856 --- [projeto] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T08:41:48.346-03:00  INFO 5856 --- [projeto] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T08:41:48.464-03:00  INFO 5856 --- [projeto] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T08:41:49.079-03:00  WARN 5856 --- [projeto] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T08:41:49.584-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T08:41:49.641-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T08:41:49.654-03:00  INFO 5856 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : Started ProjetoApplication in 6.692 seconds (process running for 7.461)
+2024-04-03T08:43:30.473-03:00  INFO 5856 --- [projeto] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-03T08:43:30.492-03:00  INFO 5856 --- [projeto] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T08:43:30.497-03:00  INFO 5856 --- [projeto] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-03T08:43:30.506-03:00  INFO 5856 --- [projeto] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-03T08:43:30.571-03:00  INFO 5856 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : Iniciando aplicação...
+2024-04-03T08:43:30.628-03:00  INFO 5856 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : Starting ProjetoApplication using Java 17.0.10 with PID 5856 (C:\residencia18-modulo3\java-avancado\workspace\residencia-tic-18-java-avancado\Aula 07\projeto\target\classes started by diasb in C:\residencia18-modulo3\java-avancado\workspace\residencia-tic-18-java-avancado\Aula 07\projeto)
+2024-04-03T08:43:30.629-03:00  INFO 5856 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-04-03T08:43:30.977-03:00  INFO 5856 --- [projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T08:43:31.000-03:00  INFO 5856 --- [projeto] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2024-04-03T08:43:31.124-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-03T08:43:31.125-03:00  INFO 5856 --- [projeto] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-03T08:43:31.125-03:00  INFO 5856 --- [projeto] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T08:43:31.152-03:00  INFO 5856 --- [projeto] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-03T08:43:31.152-03:00  INFO 5856 --- [projeto] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 518 ms
+2024-04-03T08:43:31.208-03:00  INFO 5856 --- [projeto] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T08:43:31.211-03:00  INFO 5856 --- [projeto] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-03T08:43:31.216-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T08:43:31.218-03:00  INFO 5856 --- [projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-03T08:43:31.277-03:00  INFO 5856 --- [projeto] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@24c770ba
+2024-04-03T08:43:31.278-03:00  INFO 5856 --- [projeto] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-03T08:43:31.292-03:00  WARN 5856 --- [projeto] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T08:43:31.415-03:00  INFO 5856 --- [projeto] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T08:43:31.514-03:00  INFO 5856 --- [projeto] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T08:43:31.755-03:00  WARN 5856 --- [projeto] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T08:43:32.008-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-03T08:43:32.031-03:00  INFO 5856 --- [projeto] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-03T08:43:32.045-03:00  INFO 5856 --- [projeto] [restartedMain] c.ecomerce.projeto.ProjetoApplication    : Started ProjetoApplication in 1.466 seconds (process running for 109.852)
+2024-04-03T08:43:32.056-03:00  INFO 5856 --- [projeto] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-03T08:43:37.468-03:00  INFO 5856 --- [projeto] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T08:43:37.468-03:00  INFO 5856 --- [projeto] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-03T08:43:37.473-03:00  INFO 5856 --- [projeto] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-03T08:43:37.814-03:00  INFO 5856 --- [projeto] [http-nio-8080-exec-1] c.e.p.controller.CategoriaController     : [CategoriaController]: listarCategorias
+2024-04-03T08:43:38.118-03:00  WARN 5856 --- [projeto] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)
+2024-04-03T08:43:38.119-03:00  WARN 5856 --- [projeto] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)]

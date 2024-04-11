@@ -1,0 +1,13 @@
+package com.ecomerce.projeto.util;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class UtilTests {
+	
+	@Test
+	void aplicarDescontoCategoria() {
+	}
+
+}
