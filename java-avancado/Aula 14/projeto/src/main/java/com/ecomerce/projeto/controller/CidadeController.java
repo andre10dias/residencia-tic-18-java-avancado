@@ -1,10 +1,14 @@
 package com.ecomerce.projeto.controller;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort.Direction;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,74 +18,62 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.util.UriComponentsBuilder;
 
 import com.ecomerce.projeto.controller.dto.CidadeDTO;
-import com.ecomerce.projeto.controller.form.CidadeForm;
 import com.ecomerce.projeto.model.Cidade;
-import com.ecomerce.projeto.repository.CidadeRepository;
+import com.ecomerce.projeto.service.CidadeService;
 
-import jakarta.transaction.Transactional;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @RestController
 @RequestMapping("/cidades")
 public class CidadeController {
 	
 	@Autowired
-	CidadeRepository repository;
+	CidadeService service;
 	
 	@GetMapping
-	public List<Cidade> listarCidades() {
-		List<Cidade> listaCidades = repository.findAll();
-		return listaCidades;
-	}
-	
-	@PostMapping()
-	public ResponseEntity<CidadeDTO> cadastrar(@RequestBody CidadeForm form, UriComponentsBuilder uriBuilder) {
-		Cidade cidade = form.toCidade();
-		repository.save(cidade);
+	public Page<CidadeDTO> listarCidades(
+    		@PageableDefault(sort = "id", direction = Direction.DESC, page = 0, size = 10
+	) Pageable paginacao) {
+		Page<Cidade> listaCidades = service.listarCidades(paginacao);
 		
-		URI uri = uriBuilder.path("/cidade/{id}").buildAndExpand(cidade.getId()).toUri();
-		return ResponseEntity.created(uri).body(new CidadeDTO(cidade));
+		log.info("[CidadeController]: listarCidades");
+		
+		Page<CidadeDTO> listaCidadesDto = listaCidades.map(CidadeDTO::new);
+		
+		return listaCidadesDto;
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<CidadeDTO> pegarPorId(@PathVariable Long id) {
-		//Optional -> Pode ser que tenha o registro pode ser que não tenha
-		//Elimina o erro caso o parâmetro passado não exista
-		Optional<Cidade> cidade = repository.findById(id);
-		
-		if (cidade.isPresent()) {
-			return ResponseEntity.ok(new CidadeDTO(cidade.get()));
-		}
-		
-		return ResponseEntity.notFound().build();
-	}
+    public ResponseEntity<Cidade> getCidadeById(@PathVariable Long id) {
+        Optional<Cidade> cidade = service.pegarPorId(id);
+        return cidade.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public ResponseEntity<Cidade> createCidade(@RequestBody Cidade cidade) {
+        Cidade createdCidade = service.cadastrar(cidade);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdCidade);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Cidade> updateCidade(@PathVariable Long id, @RequestBody Cidade updatedCidade) {
+        Optional<Cidade> cidade = service.atualizar(id, updatedCidade);
+        return cidade.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteCidade(@PathVariable Long id) {
+        service.remover(id);
+        return ResponseEntity.noContent().build();
+    }
 	
-	@PutMapping("/{id}")
-	@Transactional
-	public ResponseEntity<CidadeDTO> atualizar(@PathVariable Long id, @RequestBody CidadeForm form) {
-		Optional<Cidade> optional = repository.findById(id);
-		
-		if (optional.isPresent()) {
-			Cidade cidade = form.atualizar(id, repository);
-			return ResponseEntity.ok(new CidadeDTO(cidade));
-		}
-		
-		return ResponseEntity.notFound().build();
-		
-	}
-	
-	@DeleteMapping("/{id}")
-	public ResponseEntity<?> remover(@PathVariable Long id) {
-		Optional<Cidade> optional = repository.findById(id);
-		
-		if (optional.isPresent()) {
-			repository.deleteById(id);
-			return ResponseEntity.ok().build();
-		}
-		
-		return ResponseEntity.notFound().build();
+	@GetMapping("/cidade/{estadoId}")
+	public List<Cidade> pegarCidadesPorEstado(@PathVariable Long estadoId) {
+		List<Cidade> listaCidades = service.pegarCidadesPorEstado(estadoId);
+		return listaCidades;
 	}
 
 }

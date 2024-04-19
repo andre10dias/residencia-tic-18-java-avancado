@@ -8,6 +8,6 @@ import com.ecomerce.projeto.model.Cidade;
 
 public interface CidadeRepository extends JpaRepository<Cidade, Long> {
 	
-	public List<Cidade> findCidadesByEstadoId(Long id);
+	public List<Cidade> findCidadesByEstadoId(Long estadoId);
 
 }
