@@ -16,10 +16,11 @@ public class UsuarioForm {
 	
 	private String email;
 	private String senha;
+	private String role;
 	private Boolean ativo;
 	
 	public Usuario toUsuario() {
-		return new Usuario(null, email, senha, ativo);
+		return new Usuario(null, email, senha, role, ativo);
 	}
 	
 	public Usuario atualizar(Long id, UsuarioRepository repository) {
