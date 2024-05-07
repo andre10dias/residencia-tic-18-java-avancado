@@ -6,9 +6,8 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="org.postgresql"/>
+		<item key="selection" value="Role"/>
 		<list key="findhistory">
-			<item value="org.postgresql"/>
 			<item value="Produto"/>
 			<item value="spring-boot-starter-actuator"/>
 			<item value="spring-boot-starter-web"/>
@@ -23,6 +22,7 @@
 			<item value="Categoria"/>
 			<item value="categoria"/>
 			<item value="produto"/>
+			<item value="Repository"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Role"/>

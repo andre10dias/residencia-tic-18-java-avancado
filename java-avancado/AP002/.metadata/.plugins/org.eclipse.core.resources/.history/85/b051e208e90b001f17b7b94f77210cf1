@@ -1,8 +1,0 @@
-package com.ecomerce.projeto.model;
-
-public class ResetPasswordRequest {
-	
-	private String token;
-    private String newPassword;
-	
-}
