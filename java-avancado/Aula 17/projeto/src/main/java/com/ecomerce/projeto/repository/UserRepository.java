@@ -26,10 +26,9 @@ public class UserRepository {
                 """;
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcClient.sql(insertQuery)
-                .param(1, usuario.getEmail())
-                .param(2, usuario.getSenha())
-                .param(3, usuario.getEmail())
-                .param(4, usuario.getRoles())
+                .param(1, usuario.getSenha())
+                .param(2, usuario.getEmail())
+                .param(3, usuario.getRoles())
                 .update();
         return keyHolder.getKeyAs(Long.class);
     }

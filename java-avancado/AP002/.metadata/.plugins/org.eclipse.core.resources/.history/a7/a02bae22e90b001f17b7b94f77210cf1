@@ -1,0 +1,8 @@
+package com.ecomerce.projeto.controller.dto;
+
+public class ResetPasswordRequest {
+	
+	private String token;
+    private String newPassword;
+	
+}

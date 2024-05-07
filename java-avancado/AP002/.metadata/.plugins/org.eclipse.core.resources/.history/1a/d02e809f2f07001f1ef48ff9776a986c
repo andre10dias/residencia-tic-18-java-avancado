@@ -1,0 +1,5 @@
+package com.ecomerce.projeto.security;
+
+public class SecurityFilterChain {
+
+}

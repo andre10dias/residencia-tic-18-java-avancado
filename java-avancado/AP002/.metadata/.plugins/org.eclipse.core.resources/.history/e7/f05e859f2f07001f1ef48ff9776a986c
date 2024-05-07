@@ -1,0 +1,6 @@
+package com.ecomerce.projeto.security;
+
+@Bean
+public class SecurityFilterChain securityFilterChain {
+
+}

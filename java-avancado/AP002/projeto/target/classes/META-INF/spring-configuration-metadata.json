@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "com.ecomerce.projeto.config.JwtConfigProperties",
+      "sourceType": "com.ecomerce.projeto.config.JwtConfigProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.private-key",
+      "type": "java.security.interfaces.RSAPrivateKey",
+      "sourceType": "com.ecomerce.projeto.config.JwtConfigProperties"
+    },
+    {
+      "name": "jwt.public-key",
+      "type": "java.security.interfaces.RSAPublicKey",
+      "sourceType": "com.ecomerce.projeto.config.JwtConfigProperties"
+    }
+  ],
+  "hints": []
+}

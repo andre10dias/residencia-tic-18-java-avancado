@@ -1,0 +1,5 @@
+package com.ecomerce.projeto.model;
+
+public class Role {
+
+}

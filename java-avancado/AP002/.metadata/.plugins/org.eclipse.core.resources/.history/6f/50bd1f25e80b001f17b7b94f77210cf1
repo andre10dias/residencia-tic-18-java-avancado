@@ -1,0 +1,28 @@
+package com.ecomerce.projeto.service;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+public class TokenService {
+
+    // Mapa para armazenar os tokens com referência ao e-mail do usuário
+    private Map<String, String> tokenMap = new HashMap<>();
+
+    // Método para gerar um token único e associá-lo ao e-mail do usuário
+    public String generateToken(String email) {
+        String token = UUID.randomUUID().toString();
+        tokenMap.put(token, email);
+        return token;
+    }
+
+    // Método para recuperar o e-mail associado a um token
+    public String getEmailByToken(String token) {
+        return tokenMap.get(token);
+    }
+
+    // Método para invalidar um token
+    public void invalidateToken(String token) {
+        tokenMap.remove(token);
+    }
+}
